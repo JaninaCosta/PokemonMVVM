@@ -8,10 +8,10 @@ plugins {
 }
 
 android {
-    namespace 'com.bigproject.pkprueba'
+    namespace 'com.proyecto.pkprueba'
     compileSdk 34
     defaultConfig {
-        applicationId "com.bigproject.pkprueba"
+        applicationId "com.proyecto.pkprueba"
         minSdk 22
         targetSdk 34
         versionCode 1
