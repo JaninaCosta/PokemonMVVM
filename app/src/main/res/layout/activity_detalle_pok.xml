@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activities.DetallePokemonActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cvImages"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="18dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="6dp"
+                app:strokeColor="@color/color_borde">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imvPokemon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="25dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+                    <TextView
+                        style="@style/labels_text_regular_bold"
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Nombre:"
+                        android:background="@color/colorSurface"/>
+                    <TextView
+                        style="@style/labels_text_regular"
+                        android:id="@+id/txvName"
+                        android:padding="8dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"/>
+                </LinearLayout>
+                <View
+                    android:background="@color/colorSurfaceVariant"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"/>
+                <LinearLayout
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+                    <TextView
+                        style="@style/labels_text_regular_bold"
+                        android:padding="8dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Id:"
+                        android:background="@color/colorSurface"/>
+                    <TextView
+                        style="@style/labels_text_regular"
+                        android:id="@+id/txvId"
+                        android:padding="8dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"/>
+                </LinearLayout>
+                <View
+                    android:background="@color/colorSurfaceVariant"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"/>
+                <LinearLayout
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+                    <TextView
+                        style="@style/labels_text_regular_bold"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Peso:"
+                        android:padding="8dp"
+                        android:background="@color/colorSurface"/>
+                    <TextView
+                        style="@style/labels_text_regular"
+                        android:id="@+id/txvPeso"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                style="@style/labels_text_accent_small_bold"
+                android:layout_gravity="center_horizontal"
+                android:text="TIPO"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_tipos"
+                android:layout_margin="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:clipToPadding="false"
+                android:overScrollMode="never" />
+
+            <TextView
+                style="@style/labels_text_accent_small_bold"
+                android:layout_gravity="center_horizontal"
+                android:text="HABILIDADES"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_habilidades"
+                android:layout_margin="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:clipToPadding="false"
+                android:overScrollMode="never" />
+
+            <TextView
+                style="@style/labels_text_accent_small_bold"
+                android:layout_gravity="center_horizontal"
+                android:text="MOVIMIENTOS"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_movientos"
+                android:layout_margin="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:clipToPadding="false"
+                android:overScrollMode="never" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

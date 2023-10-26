@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height_linear_pagar">63dp</dimen>
+    <dimen name="card_elevation_linear_pagar">7dp</dimen>
+    <dimen name="card_elevation_linear_curvo_top">11dp</dimen>
+    <!-- edittext -->
+    <dimen name="libizo_setStrokeWidth">1.2dp</dimen>
+    <dimen name="libizo_setStrokeWidthFino">0.9dp</dimen>
+    <dimen name="libizo_setCornerRadius">20dp</dimen>
+
+    <dimen name="margin_pantalla_direccion_nueva">20dp</dimen>
+    <dimen name="item_offset">10</dimen>
+</resources>

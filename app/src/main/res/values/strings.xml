@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Pokemon</string>
+    <string name="error_internet_message">Parece que no tienes conexión a internet, revisa tu wifi o datos móviles e inténtalo de nuevo.</string>
+
+</resources>
