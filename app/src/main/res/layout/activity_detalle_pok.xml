@@ -164,6 +164,21 @@
                 android:layout_gravity="center"
                 android:clipToPadding="false"
                 android:overScrollMode="never" />
+
+            <TextView
+                style="@style/labels_text_accent_small_bold"
+                android:layout_gravity="center_horizontal"
+                android:text="ESPÍRITUS"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_espiritus"
+                android:layout_margin="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:clipToPadding="false"
+                android:overScrollMode="never" />
         </LinearLayout>
     </ScrollView>
 
