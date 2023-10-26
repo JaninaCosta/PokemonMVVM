@@ -1,0 +1,33 @@
+package com.bigproject.pkprueba.ui.adapter
+import android.annotation.SuppressLint
+import android.content.Context
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
+import com.bigproject.pkprueba.R
+import com.bigproject.pkprueba.interfaz.detalle.MovesModel
+
+class MovimientosAdapter(private val list: List<MovesModel>, val context: Context)
+    :RecyclerView.Adapter<MovimientosAdapter.ViewHolder>() {
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        // Create a new view, which defines the UI of the list item
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.layout_adapter_habilidades_pokemon, parent, false)
+        return ViewHolder(view)
+    }
+
+    @SuppressLint("SetTextI18n")
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        val itemData = list[position]
+        holder.txvHabilidades.setText(itemData.move.name)
+
+    }
+
+    override fun getItemCount(): Int = list.size
+
+    class ViewHolder(view: View): RecyclerView.ViewHolder(view) {
+        val txvHabilidades = view.findViewById(R.id.txtHabilidades) as TextView
+    }
+}
